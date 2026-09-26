@@ -10,8 +10,5 @@ java {
 
 dependencies {
     api "org.jmonkeyengine:jme3-core:${rootProject.ext.jmeVersion}"
-
-    implementation "org.jmonkeyengine:jme3-effects:${rootProject.ext.jmeVersion}"
-    implementation "org.jmonkeyengine:jme3-terrain:${rootProject.ext.jmeVersion}"
     implementation "org.jmonkeyengine:jme3-jbullet:${rootProject.ext.jmeVersion}"
 }

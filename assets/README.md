@@ -1,5 +1,5 @@
-# Shared game assets
+# Shared BEEP assets
 
-Place Beep runtime assets here: models, materials, textures, audio, fonts, scenes, particles, and other jMonkeyEngine resources.
+Place BEEP runtime assets here: models, materials, textures, audio, fonts, scenes, particles, and other jMonkeyEngine resources.
 
-Both the desktop and Android launchers are configured to use this directory so assets do not need to be duplicated per platform.
+Both the desktop and Android launchers use this directory so assets do not need to be duplicated per platform.

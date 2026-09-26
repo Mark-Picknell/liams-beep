@@ -1,21 +1,24 @@
-package com.picknell.game.stuffykarts.desktop;
+package com.picknell.beep.desktop;
 
 import com.jme3.system.AppSettings;
-import com.picknell.game.stuffykarts.StuffyKarts;
+import com.picknell.beep.Beep;
 
+/**
+ * Desktop launcher for the shared BEEP simulation.
+ */
 public final class DesktopLauncher {
 
     private DesktopLauncher() {
     }
 
     public static void main(String[] arguments) {
-        StuffyKarts game = new StuffyKarts();
+        Beep beep = new Beep();
 
         AppSettings settings = new AppSettings(true);
-        settings.setTitle("Stuffy Karts");
+        settings.setTitle("Liam's BEEP");
         settings.setResolution(1280, 720);
 
-        game.setSettings(settings);
-        game.start();
+        beep.setSettings(settings);
+        beep.start();
     }
 }
