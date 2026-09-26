@@ -7,7 +7,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="Liam's Beep"
+        android:label="Liam's BEEP"
         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
 
         <activity

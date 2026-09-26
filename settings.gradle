@@ -14,7 +14,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Liam's Beep"
+rootProject.name = "Liam's BEEP"
 
 include ':game'
 include ':desktop'
