@@ -1,24 +1,32 @@
-# Compiled class file
+# Gradle
+.gradle/
+**/build/
+build/
+
+# Android / local SDK state
+local.properties
+*.apk
+*.aab
+
+# Android Code Studio / IDE state
+.acside/
+.idea/
+*.iml
+
+# Java
 *.class
 
-# Log file
+# Logs and JVM crash files
 *.log
+hs_err_pid*
+replay_pid*
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Package/archive files (keep the Gradle wrapper JAR)
 *.jar
+!gradle/wrapper/gradle-wrapper.jar
 *.war
 *.nar
 *.ear
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*

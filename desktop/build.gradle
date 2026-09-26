@@ -1,0 +1,30 @@
+plugins {
+    id 'application'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+dependencies {
+    implementation project(':game')
+
+    runtimeOnly "org.jmonkeyengine:jme3-desktop:${rootProject.ext.jmeVersion}"
+    runtimeOnly "org.jmonkeyengine:jme3-lwjgl3:${rootProject.ext.jmeVersion}"
+}
+
+application {
+    mainClass = 'com.picknell.beep.desktop.DesktopLauncher'
+}
+
+sourceSets {
+    main {
+        resources.srcDir rootProject.file('assets')
+    }
+}
+
+tasks.named('run') {
+    workingDir rootProject.projectDir
+}
