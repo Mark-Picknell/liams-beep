@@ -18,7 +18,7 @@ import com.jme3.scene.shape.Box;
  *
  * Platform-specific launchers live in the desktop and Android modules.
  */
-public class Beep extends SimpleApplication {
+public class Beep extends SimpleApplication {\n    private BehavioralBeepBody beepBody;
     
     @Override
     public void simpleInitApp() {
@@ -49,7 +49,7 @@ public class Beep extends SimpleApplication {
         physicsSpace.addAll(beep);
     }
     
-    private Node createFloor() {
+    @Override\n    public void simpleUpdate(float tpf) {\n        if (beepBody != null) {\n            beepBody.update(tpf);\n        }\n    }\n\n    private Node createFloor() {
         String name= "Floor";
         Vector3f minimum = new Vector3f(-15.0f, -5.0f, -15.0f);
         Vector3f maximum = new Vector3f(15.0f, 5.0f, 15.0f);
